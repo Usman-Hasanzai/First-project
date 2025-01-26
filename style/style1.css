@@ -1,0 +1,418 @@
+:root {
+  --box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-weight: 400;
+}
+html {
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* after that our 1 rem is equal 10px */
+  font-family: "roboto", sans-serif;
+}
+
+.section__header {
+  text-align: center;
+  font-family: "italiano", cursive;
+  font-size: 6rem;
+}
+.section__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 95vh;
+}
+
+/* ------------------------------------above is reset code-------------------------------- */
+body {
+  background-color: #fff;
+  width: 100rem;
+  max-width: 100%;
+  margin: auto; /*it bring the body size in the center  */
+  box-shadow: var(--box-shadow);
+}
+.blog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  min-width: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 0.4rem;
+}
+.header__fifure {
+  padding: 1rem;
+  border: 0.1rem solid #fff;
+  color: #fff;
+  margin-left: 1rem;
+}
+.logo {
+  font-size: 2rem;
+}
+.header__nav {
+  margin: 2rem;
+}
+.header__nav ul {
+  display: flex;
+  gap: 2rem;
+}
+.header__nav ul li {
+  padding: 1rem;
+  border-radius: 0.6rem;
+  transition: all 0.3s;
+}
+.header__nav ul li:hover {
+  background-color: red;
+}
+.nav__link {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.btn {
+  font-size: 2rem;
+  padding: 1rem 0;
+  border-radius: 0.6rem;
+  background-color: rgb(230, 159, 8);
+  border: none;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* -------------------------------------bunner section under--------------------- */
+
+.blog-bunner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+  min-height: 95vh;
+}
+.bunner__artical {
+  flex-basis: 50%;
+  margin: 1rem;
+}
+.article__header {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.article__description {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+.bunner__aside {
+  flex-basis: 50%;
+  text-align: center;
+}
+.aside__img {
+  width: 55rem;
+  height: 55rem;
+  border: 0.3rem solid #000;
+}
+/* ----------------------------------under is about section-------------------- */
+.blog-about {
+  min-height: 95vh;
+  background-color: #4c4c4c;
+}
+.about__header {
+  color: #fff;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin: 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #a09d9d;
+  transition: all 0.3s;
+  border-radius: 0.6rem;
+  padding: 2rem 1rem;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card__header {
+  font-size: 3rem;
+}
+.card__description {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.card__btn {
+  width: 80%;
+}
+/* ---------------------------------under is archive ------------------------ */
+
+.archieve__contener {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 0.1rem solid #000;
+  border-bottom: 0.1rem solid #000;
+  padding: 2rem;
+}
+.archieve__contener ul {
+  display: flex;
+  text-align: center;
+  gap: 1.2rem;
+}
+.archieve__list {
+  gap: 2rem;
+}
+.archieve__image {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+.archieve__image:hover {
+  transform: scale(1.1);
+}
+/* ---------------------------------under is blog post------------------- */
+.blog-blogpost {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.blog-posts {
+  gap: 4rem;
+}
+.blog__post {
+  flex: 1;
+  display: flex;
+  width: 70%;
+  gap: 2rem;
+  transition: all 0.3s;
+  box-shadow: var(--box-shadow);
+}
+.blog__post:hover {
+  transform: scale(1.08);
+}
+.post__content {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 0.5rem 1rem;
+}
+.post__header {
+  font-size: 2.5rem;
+  padding: 1rem 0rem;
+}
+.post__sub__header {
+  font-size: 2rem;
+  text-align: justify;
+  padding: 1rem 0rem;
+}
+.post__description {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+.blog__btn {
+  width: 40%;
+  transition: all 0.3s;
+}
+.blog__btn:hover {
+  background-color: rgb(230, 159, 8);
+  color: rgb(255, 255, 255);
+}
+.post__img {
+  width: 23rem;
+  height: 15rem;
+}
+/* ---------------------------------under is contact me---------------------- */
+.blog-contacts {
+  background-color: #4c4c4c;
+  min-height: 95vh;
+  margin-top: 2rem;
+}
+.contact__header {
+  color: #fff;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+}
+.form__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.form__lable {
+  font-size: 1.6rem;
+  flex: 0.3;
+  color: #fff;
+}
+.form__control > input,
+textarea {
+  width: 40rem;
+  flex: 0.7;
+  padding: 2rem 1rem;
+  border: none;
+  border-radius: 0.6rem;
+}
+textarea {
+  resize: none;
+  height: 12vh;
+}
+.form__btn__control {
+  display: flex;
+  justify-content: flex-end;
+}
+.form__btn {
+  width: 30%;
+}
+/* -----------------------------------under is footer -------------------------- */
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+  background-color: #222;
+  min-height: 4vh;
+  padding: 3rem 2rem;
+  gap: 1rem;
+}
+.footer__text {
+  font-size: 1.4rem;
+}
+.footer__nav {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer__link {
+  color: #fff;
+  transition: all 0.1s;
+}
+.footer__link:hover {
+  color: rgb(230, 159, 8);
+  transform: scale(1.5);
+}
+.footer__icon {
+  font-size: 2rem;
+}
+
+/* ------------------------------under is responsive----------------------- */
+
+@media screen and (max-width: 992px) {
+  .blog-bunner {
+    flex-direction: column;
+  }
+  .bunner__artical {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-bunner {
+    flex-direction: column;
+  }
+  .bunner__artical {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner__img {
+    max-width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+  .blog__post {
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+  }
+  .post__img {
+    width: 100%;
+    height: 50%;
+  }
+  .blog-contacts {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 48.5%;
+    transition: all 0.4s;
+  }
+  .header__nav ul {
+    flex-direction: column;
+  }
+  .blog-header {
+    flex-direction: column;
+  }
+  .blog-bunner {
+    flex-direction: column;
+  }
+  .bunner__artical {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+  .blog__post {
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+  }
+  .post__img {
+    width: 100%;
+    height: 50%;
+  }
+  .contact__form {
+    width: 90%;
+  }
+  .form__control {
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+  .form__control > input,
+  textarea {
+    margin-bottom: 0.5rem;
+  }
+}
